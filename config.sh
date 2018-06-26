@@ -32,15 +32,15 @@ chsh -s /bin/zsh
 cp oh-my-zsh/.zshrc ~/
 cp flake8 ~/.config/flake8
 
-echo "====================="
-echo "3. Config Vim"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || true
-pip install autopep8 --user
-vim +PluginInstall +qall
-git config --global diff.tool vimdiff
-git config --global difftool.prompt false
-git config --global alias.d difftool
-(cd ~/.vim/bundle/YouCompleteMe && ./install.py)
+# echo "====================="
+# echo "3. Config Vim"
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || true
+# pip install autopep8 --user
+# vim +PluginInstall +qall
+# git config --global diff.tool vimdiff
+# git config --global difftool.prompt false
+# git config --global alias.d difftool
+# (cd ~/.vim/bundle/YouCompleteMe && ./install.py)
 
 echo "====================="
-echo "4. Success!"
+echo "Success!"
